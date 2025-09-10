@@ -1,0 +1,156 @@
+/* .clear-button {
+  padding: 2px;
+  padding: auto; 
+  border-radius: 5px;
+  margin: 2px;
+  text-align: end;
+  color: #333333; 
+  background-color: #E07A5F;
+}
+
+.Ingredients {
+  color: #457B9D; 
+  font-family: roboto;
+}
+
+.dish-list {
+  background: rgba(255,255,255,0.85);
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 500px;
+  backdrop-filter: blur(4px);
+}
+
+.dish-list h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #3D405B; 
+}
+
+.dish-list ul {
+  list-style: none;
+}
+
+.dish-list li {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+
+.Dish-name {
+  color: #E63946; 
+}
+
+.steps {
+  color:red; 
+}
+
+
+.dish-details, p {
+  color: #333333; }
+
+.main-steps{
+    color: #6B705C;
+}
+.main-ingredient{
+color: #57d811;
+}
+
+.clear-button:hover {
+  background-color: #d66a4c;
+} */
+
+.dish-list {
+  background: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(4px);
+}
+
+.dish-list h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #3d405b;
+}
+
+.dish-item {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+
+.Dish-name {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.Ingredients {
+  color: #457b9d;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-ingredient {
+  color: #57d811;
+}
+
+.steps {
+  color: red;
+}
+
+.main-steps {
+  color: #6b705c;
+}
+
+/* Delete Button */
+.clear-button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: 8px;
+  text-align: center;
+  color: #fff;
+  background-color: #e07a5f;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #d66a4c;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .dish-list {
+    padding: 12px;
+  }
+
+  .dish-list h4 {
+    font-size: 1rem;
+  }
+
+  .dish-item {
+    padding: 8px;
+  }
+
+  .clear-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dish-list {
+    padding: 10px;
+  }
+
+  .dish-item {
+    font-size: 0.85rem;
+  }
+}

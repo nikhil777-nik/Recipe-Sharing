@@ -1,0 +1,98 @@
+/* Add Page - Responsive & Dynamic */
+.addpage-main {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.add-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Inputs and Textareas */
+.add-form input,
+.add-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Button */
+.add-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #f9a826;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.add-form button:hover {
+  background: #ffb84d;
+  transform: scale(1.02);
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .add-form {
+    padding: 18px;
+    gap: 10px;
+  }
+
+  .add-form input,
+  .add-form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .add-form button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 480px) {
+  .addpage-main {
+    padding: 15px;
+  }
+
+  .add-form {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .add-form input,
+  .add-form textarea {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .add-form button {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
