@@ -1,156 +1,132 @@
-/* .clear-button {
-  padding: 2px;
-  padding: auto; 
-  border-radius: 5px;
-  margin: 2px;
-  text-align: end;
-  color: #333333; 
-  background-color: #E07A5F;
+/* Gallery Container */
+.gallery-container {
+  padding: 40px 20px;
+  background-color: #fce4ec; /* Light pink background from the image */
+  min-height: 90vh;
 }
 
-.Ingredients {
-  color: #457B9D; 
-  font-family: roboto;
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.dish-list {
-  background: rgba(255,255,255,0.85);
-  margin: 20px auto;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: left;
-  max-width: 500px;
-  backdrop-filter: blur(4px);
+/* Dish Card */
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.dish-list h4 {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: #3D405B; 
+.dish-details {
+  flex-grow: 1; /* Allows the content to expand and fill space */
 }
 
-.dish-list ul {
-  list-style: none;
+.dish-name {
+  color: #e63946; /* A reddish-pink from the image */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffb84d;
+  padding-bottom: 8px;
 }
 
-.dish-list li {
-  margin-bottom: 12px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 8px;
+.dish-info-section {
+  margin-bottom: 15px;
 }
 
-.Dish-name {
-  color: #E63946; 
-}
-
-.steps {
-  color:red; 
-}
-
-
-.dish-details, p {
-  color: #333333; }
-
-.main-steps{
-    color: #6B705C;
-}
-.main-ingredient{
-color: #57d811;
-}
-
-.clear-button:hover {
-  background-color: #d66a4c;
-} */
-
-.dish-list {
-  background: rgba(255, 255, 255, 0.85);
-  margin: 20px auto;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: left;
-  max-width: 600px;
-  width: 90%;
-  backdrop-filter: blur(4px);
-}
-
-.dish-list h4 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #3d405b;
-}
-
-.dish-item {
-  margin-bottom: 12px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 8px;
-}
-
-.Dish-name {
-  color: #e63946;
+.section-title {
+  color: #555;
   font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
-.Ingredients {
-  color: #457b9d;
-  font-family: "Roboto", sans-serif;
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
 }
 
-.main-ingredient {
-  color: #57d811;
+.info-list li {
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 15px;
 }
 
-.steps {
-  color: red;
+.info-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffb84d; /* Orange bullet points */
 }
 
-.main-steps {
-  color: #6b705c;
-}
-
-/* Delete Button */
+/* Clear Button */
 .clear-button {
-  padding: 6px 12px;
-  border-radius: 5px;
-  margin-top: 8px;
-  text-align: center;
-  color: #fff;
-  background-color: #e07a5f;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
   border: none;
+  border-radius: 8px;
+  background-color: #e07a5f; /* A darker orange/red */
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .clear-button:hover {
   background-color: #d66a4c;
 }
 
-/* 📱 Responsive */
+.no-dishes-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 50px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .dish-list {
-    padding: 12px;
-  }
-
-  .dish-list h4 {
-    font-size: 1rem;
-  }
-
-  .dish-item {
-    padding: 8px;
-  }
-
-  .clear-button {
-    width: 100%;
+  .dish-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px) {
-  .dish-list {
-    padding: 10px;
-  }
 
-  .dish-item {
-    font-size: 0.85rem;
-  }
+
+
+
+.dish-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative; 
 }
+
+
+.difficulty-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #4CAF50; 
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+
+
+

@@ -1,171 +1,3 @@
-/* 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-.app-container {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-}
-
-
-.header {
-  background: #222;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  position: relative;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo-icon {
-  width: 28px;
-  height: 28px;
-}
-
-.logo-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: #f9a826;
-}
-
-
-.main {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.bg-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
-}
-
-.hero-content {
-  color: #fff;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.hero-content-h2 {
-  color: #f9a826;
-}
-
-.hero-content h3 {
-  margin: 15px 0;
-  font-weight: 400;
-}
-
-
-.add-form {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  backdrop-filter: blur(6px);
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.add-form input,
-.add-form textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  font-size: 0.95rem;
-}
-
-.add-form textarea {
-  resize: vertical;
-  min-height: 60px;
-}
-
-.add-form button {
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  background: #f9a826;
-  color: #222;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.add-form button:hover {
-  background: #ffb84d;
-}
-
-
-
-
-.footer {
-  background: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-
-.add-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.add-button:hover {
-  background-color: #555;
-} */
-
-
 /* Reset */
 * {
   margin: 0;
@@ -176,9 +8,10 @@
 .app-container {
   font-family: "Poppins", sans-serif;
   color: #333;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  
 }
 
 /* Header */
@@ -188,146 +21,240 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 25px 30px;
   flex-wrap: wrap;
+  
 }
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo-icon {
-  width: 28px;
-  height: 28px;
-}
-
 .logo-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #f9a826;
+  text-decoration: none;
+  font-family: Lobster;
 }
-
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 22px;
 }
-
 .nav-links a {
   color: #fff;
   text-decoration: none;
   transition: color 0.2s;
-  font-size: 1rem;
+  font-family: Pacifico;
 }
-
 .nav-links a:hover {
   color: #f9a826;
 }
 
-/* Background & Hero */
-.main {
-  position: relative;
-  flex: 1;
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80")
+    center/cover no-repeat;
+  height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55); 
+  padding: 2rem 2.5rem;
+  text-align: left; 
+  color: #fff;
+  border-radius: 12px;
+  max-width: 650px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); 
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  bottom:50%;
+  transform: translate(-50%,-50%); 
+  height: 45vh;
+   text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: Montserrat;
+}
+
+.hero-overlay p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Open Sans;
+}
+
+.cta-btn {
+  background: #f9a826;
+  color: #222;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  font-family: Montserrat;
+ 
+}
+
+.cta-btn:hover {
+  background: #f27434;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Featured */
+.featured {
+  padding: 3rem 2rem;
   text-align: center;
 }
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
+.featured h2{
+  font-family: Epunda Slab;
 }
-
-.bg-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
-  transition: background-image 1s ease-in-out;
+.featured p{
+  font-family: Open Sans;
 }
-
-.hero-content {
-  color: #fff;
-  max-width: 600px;
-  padding: 20px;
+.recipe-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
-
-.hero-content h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.hero-content-h2 {
-  color: #f9a826;
-}
-
-.add-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
+.recipe-card {
+  background: white;
+  padding: 1rem;
   border-radius: 10px;
-  margin: 10px;
-  transition: background 0.2s;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.recipe-card h3{
+  font-family: Montserrat;
+}
+.recipe-card p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.add-button:hover {
-  background-color: #555;
+/* How it works */
+.how-it-works {
+  background: #fafafa;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.testimonial {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter */
+.newsletter {
+  background: #f9a826;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.subscribe-box input {
+  padding: 0.8rem;
+  width: 250px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+}
+.subscribe-box button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: #333;
+  color: white;
+  cursor: pointer;
 }
 
 /* Footer */
 .footer {
   background: #222;
-  color: #fff;
-  padding: 20px;
+  color: #ccc;
+  padding: 2rem;
+}
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.footer h4 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.footer-bottom {
   text-align: center;
+  margin-top: 2rem;
   font-size: 0.9rem;
 }
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-  .header {
+  .recipe-cards,
+  .steps,
+  .testimonial-cards {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .add-button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    align-items: center;
   }
 }
 
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.4rem;
-  }
+.welcome{
+  font-family: roboto;
+  color: #f27434;
+}
+.sliding-text {
+  display: inline-block;
+  position: relative;
+  animation: slideIn 0.5s ease;
+}
 
-  .nav-links a {
-    font-size: 0.9rem;
-  }
 
-  .add-button {
-    width: 100%;
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

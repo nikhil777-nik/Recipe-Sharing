@@ -1,44 +1,68 @@
 
+
+
 import "./index.css"
 
+function Gallery({ dishList, setDishList }) {
 
-function Gallery({dishList,setDishList}) {
-
-    const handleDelete = (index) => {
+  const handleDelete = (index) => {
     const updated = [...dishList];
     updated.splice(index, 1);
     setDishList(updated);
-    localStorage.setItem("dishes",JSON.stringify(updated))
+    localStorage.setItem("dishes", JSON.stringify(updated))
   };
 
   return (
-    <div>
-        {dishList.length > 0 ? (
-        <div className="dish-list">
-          <h4>Added Dishes:</h4>
-          <ul>
-            {dishList.map((dish, index) => (
-              <li key={index} className="dish-item">
-                <div className="dish-details">
-                  <strong className="Dish-name">{dish.name}</strong> <br />
-                  <em className="Ingredients">Ingredients: </em><em className="main-ingredient">{dish.ingredients} </em><br />
-                  <em className="steps">Steps:</em> <em className="main-steps">{dish.steps}</em>
-                </div>
-                <button
-                  className="clear-button"
-                  onClick={() => handleDelete(index)}
-                >
-                  Clear
-                </button>
-              </li>
-            ))}
-          </ul>
+    <div className="gallery-container">
+      {dishList.length > 0 ? (
+        <div className="dish-grid">
+          {dishList.map((dish, index) => (
+            <div key={index} className="dish-card">
+              <div className="dish-details">
+                <h3 className="dish-name">{dish.name}</h3>
+
+                 <h1 className="difficulty-badge">
+                  {dish.difficulty}
+                </h1>
+               
+                {dish.ingredients && dish.ingredients.length > 0 && (
+                  <div className="dish-info-section">
+                    <p className="section-title">Ingredients:</p>
+                    <ul className="info-list">
+                      {dish.ingredients.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Check if steps exist and display as a list */}
+                {dish.steps && dish.steps.length > 0 && (
+                  <div className="dish-info-section">
+                    <p className="section-title">Steps:</p>
+                    <ol className="info-list">
+                      {dish.steps.map((step, i) => (
+                        <li key={i}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+              </div>
+              
+              <button
+                className="clear-button"
+                onClick={() => handleDelete(index)}
+              >
+                Clear
+              </button>
+            </div>
+          ))}
         </div>
       ) : (
-        <p>You Need To Add</p>
+        <p className="no-dishes-message">You haven't added any dishes yet!</p>
       )}
     </div>
   )
 }
 
-export default Gallery
+export default Gallery;
