@@ -4,8 +4,34 @@
 
 import React from "react";
 import "./index.css";
+import { BsCameraVideoFill } from "react-icons/bs";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { RiMedalLine } from "react-icons/ri";
+import { BiBuildingHouse } from "react-icons/bi";
 
 function About() {
+  const handlechatgpt = ()=>{
+    console.log("button clicked")
+    window.open("https://chat.openai.com/","_blank")
+    
+  }
+ 
+  const handlegemini = ()=>{
+    window.open("https://gemini.google.com/","_blank")
+  }
+
+  const handlelovart = ()=>{
+    window.open("https://www.lovart.ai/","_blank")
+  }
+
+const handlegoogle= ()=>{
+  window.open("https://www.google.com/","_blank")
+}
+
+const handleelonmusk = ()=>{
+  window.open("https://en.wikipedia.org/wiki/Elon_Musk","_blank")
+}
+
   return (
     <div className="about-page">
       
@@ -31,7 +57,7 @@ function About() {
                 Live Kitchen was founded by a passionate home chef. Realizing there was a disconnect between people's love for food and their confidence in the kitchen, a new idea was born. We started with simple online cooking classes for friends, which quickly grew into a global community. Today, Live Kitchen connects thousands of home cooks with expert chefs from around the world.
               </p>
             </div>
-            <div className="story-image">
+            <div className="story-image"  onClick={handleelonmusk}>
               <div className="founder-image">
                 <img src="/images\elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg"/>
               </div>
@@ -46,28 +72,28 @@ function About() {
         <div className="features-grid">
           <div className="feature-item">
             <div className="icon-container">
-              <span className="icon-map"></span>
+              <span className="icon-map"><BsCameraVideoFill /></span>
             </div>
             <h4>Live Interactive Classes</h4>
             <p>Join live, interactive classes and get real-time feedback from chefs, enhancing your cooking skills.</p>
           </div>
           <div className="feature-item">
             <div className="icon-container">
-              <span className="icon-globe"></span>
+              <span className="icon-globe"><AiOutlineGlobal /></span>
             </div>
             <h4>Global Culinary Expertise</h4>
             <p>Explore a vast library of recipes, from classic dishes to new trends, curated by renowned chefs worldwide.</p>
           </div>
           <div className="feature-item">
             <div className="icon-container">
-              <span className="icon-community"></span>
+              <span className="icon-community"><BiBuildingHouse /></span>
             </div>
             <h4>Supportive Community</h4>
             <p>Connect with a passionate community of food lovers. Share tips, and get inspiration for your next meal.</p>
           </div>
           <div className="feature-item">
             <div className="icon-container">
-              <span className="icon-star"></span>
+              <span className="icon-star"><RiMedalLine /></span>
             </div>
             <h4>Quality Assurance</h4>
             <p>Every recipe is meticulously vetted by our team to ensure a seamless experience, allowing you to master any dish.</p>
@@ -79,7 +105,9 @@ function About() {
       <section className="team-section">
         <h2 className="section-title">Meet the Team</h2>
         <div className="team-grid">
-          <div className="team-member">
+          <div className="team-member" onClick={
+            handlechatgpt
+          }>
             <div>
                 <img className="member-image-placeholder" src="/images\chatgpt.png"/>
             </div>
@@ -87,15 +115,15 @@ function About() {
             <p>Founder</p>
             <p className="bio">Former restaurant owner with a passion for making fine dining accessible to everyone.</p>
           </div>
-          <div className="team-member">
+          <div className="team-member" onClick={handlegemini}>
             <div>
                 <img className="member-image-placeholder" src="https://play-lh.googleusercontent.com/bTpNtZ6rYYX2SeI-wC4cnr7MJnOh2hjtgYu3UIrSxE09lM3GPl_Uhf9_Ih2Smje2bc0V"/>
             </div>
-            <h3>James Rodriguez</h3>
+            <h3>Gemini</h3>
             <p>CEO</p>
             <p className="bio">Known for relentless dedication and leading by example to drive company growth and innovation.</p>
           </div>
-          <div className="team-member">
+          <div className="team-member" onClick={handlelovart}>
             <div>
                 <img className="member-image-placeholder" src="/images\Lovart.jpg"/>
             </div>
@@ -103,11 +131,11 @@ function About() {
             <p>Community Manager</p>
             <p className="bio">Passionate about building and nurturing a vibrant art community, connecting creators and enthusiasts.</p>
           </div>
-          <div className="team-member">
+          <div className="team-member" onClick={handlegoogle}>
             <div>
                 <img className="member-image-placeholder" src="images\google.png"/>
             </div>
-            <h3>David Kim</h3>
+            <h3>Google</h3>
             <p>Lead Developer</p>
             <p className="bio">Expert in guiding development teams, building robust solutions, and driving innovative software projects.</p>
           </div>

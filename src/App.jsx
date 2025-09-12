@@ -67,17 +67,17 @@
             <p>Explore our community’s most loved dishes</p>
             <div className="recipe-cards">
               <div className="recipe-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0HbRY0SsECXq3XHqjXUBw3CqK1VfE5PX1w&s" alt="pizza" />
+                <img className="bowl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0HbRY0SsECXq3XHqjXUBw3CqK1VfE5PX1w&s" alt="pizza" />
                 <h3>Margherita Pizza</h3>
                 <p>Classic Italian with fresh mozzarella & basil.</p>
               </div>
               <div className="recipe-card">
-                <img src="/images\buddha_bowl.png" alt="bowl" />
+                <img src="/images\buddha_bowl.png" alt="bowl" className="bowl"/>
                 <h3>Vegetable Buddha Bowl</h3>
                 <p>Nutritious bowl with roasted veggies & tahini.</p>
               </div>
               <div className="recipe-card">
-                <img src="/images\lava-cake.jpeg" alt="cake" />
+                <img src="/images\lava-cake.jpeg" alt="cake" className="bowl"/>
                 <h3>Chocolate Lava Cake</h3>
                 <p>Decadent dessert with molten chocolate center.</p>
               </div>

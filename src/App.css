@@ -258,3 +258,7 @@
     transform: translateX(0);
   }
 }
+.bowl{
+  height: 70%;
+  padding-bottom: 5px;
+}
