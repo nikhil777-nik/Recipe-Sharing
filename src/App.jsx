@@ -72,7 +72,7 @@
                 <p>Classic Italian with fresh mozzarella & basil.</p>
               </div>
               <div className="recipe-card">
-                <img src="public\images\buddha_bowl.png" alt="bowl" />
+                <img src="/images\buddha_bowl.png" alt="bowl" />
                 <h3>Vegetable Buddha Bowl</h3>
                 <p>Nutritious bowl with roasted veggies & tahini.</p>
               </div>
