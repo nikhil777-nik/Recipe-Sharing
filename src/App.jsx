@@ -72,12 +72,12 @@
                 <p>Classic Italian with fresh mozzarella & basil.</p>
               </div>
               <div className="recipe-card">
-                <img src="images\buddha_bowl.png" alt="bowl" />
+                <img src="public\images\buddha_bowl.png" alt="bowl" />
                 <h3>Vegetable Buddha Bowl</h3>
                 <p>Nutritious bowl with roasted veggies & tahini.</p>
               </div>
               <div className="recipe-card">
-                <img src="images\lava-cake.jpeg" alt="cake" />
+                <img src="public\images\lava-cake.jpeg" alt="cake" />
                 <h3>Chocolate Lava Cake</h3>
                 <p>Decadent dessert with molten chocolate center.</p>
               </div>
@@ -151,7 +151,7 @@
               <Link to="/gallery">GALLERY</Link>
               <Link to="/about">ABOUT</Link>
               <Link to="/contact">CONTACT</Link>
-            </nav>
+            </nav>  
           </header>
           <main className="main">
             <Routes>
