@@ -77,7 +77,7 @@
                 <p>Nutritious bowl with roasted veggies & tahini.</p>
               </div>
               <div className="recipe-card">
-                <img src="public\images\lava-cake.jpeg" alt="cake" />
+                <img src="/images\lava-cake.jpeg" alt="cake" />
                 <h3>Chocolate Lava Cake</h3>
                 <p>Decadent dessert with molten chocolate center.</p>
               </div>

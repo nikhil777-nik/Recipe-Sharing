@@ -33,7 +33,7 @@ function About() {
             </div>
             <div className="story-image">
               <div className="founder-image">
-                <img src="public\images\elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg"/>
+                <img src="/images\elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg"/>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ function About() {
         <div className="team-grid">
           <div className="team-member">
             <div>
-                <img className="member-image-placeholder" src="public\images\chatgpt.png"/>
+                <img className="member-image-placeholder" src="/images\chatgpt.png"/>
             </div>
             <h3>Chat Gpt</h3>
             <p>Founder</p>
@@ -97,7 +97,7 @@ function About() {
           </div>
           <div className="team-member">
             <div>
-                <img className="member-image-placeholder" src="public\images\Lovart.jpg"/>
+                <img className="member-image-placeholder" src="/images\Lovart.jpg"/>
             </div>
             <h3>Lovart</h3>
             <p>Community Manager</p>
