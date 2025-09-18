@@ -1,53 +1,3 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.app-container {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  
-}
-
-/* Header */
-.header {
-  background: #222;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 30px;
-  flex-wrap: wrap;
-  position: relative;
-
-}
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #f9a826;
-  text-decoration: none;
-  font-family: Lobster;
-}
-.nav-links {
-  display: flex;
-  gap: 22px;
-}
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-family: Pacifico;
-}
-.nav-links a:hover {
-  color: #f9a826;
-}
-
-
 .hero {
   background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80")
     center/cover no-repeat;
@@ -263,36 +213,19 @@
   height: 70%;
   padding-bottom: 5px;
 }
-
-
-.logo-container {
-  font-size: 1.5rem;
-  font-weight: bold;
+.youtube{
+  color:#FFFFFF;
+  font-style: bold;
+  font-family:roboto;
+  padding:5px;
+  margin-top:10px;
+  margin-bottom: 0px;
+ background-color: #FF0000;
+ border: transparent;
+ font-weight: bold;
+ border-radius: 7px;
 }
-
-
-
-.walker-container {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-  height: 40px; /* height of walker */
-  margin: 0 20px;
-}
-
-.walker {
-  position: absolute;
-  top: 0;
-  left: -50px; /* start off screen */
-  font-size: 2rem;
-  animation: walk 4s linear infinite;
-}
-
-@keyframes walk {
-  0% {
-    left: -50px;
-  }
-  100% {
-    left: 100%;
-  }
+.youtube:hover{
+  background-color: #CC0000;
+   transform: scale(1.05); 
 }

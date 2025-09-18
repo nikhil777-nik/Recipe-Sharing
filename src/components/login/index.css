@@ -1,0 +1,59 @@
+.login-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff5722;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
+
+.signup-text {
+  margin-top: 10px;
+}
+
+
+.login-container {
+  background-image: url("https://st3.depositphotos.com/7893620/34958/i/450/depositphotos_349581692-stock-photo-food-cooking-background-ingredients-preparation.jpg");
+  background-size: contain;   /* Show full image */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

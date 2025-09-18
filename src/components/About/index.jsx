@@ -11,7 +11,6 @@ import { BiBuildingHouse } from "react-icons/bi";
 
 function About() {
   const handlechatgpt = ()=>{
-    console.log("button clicked")
     window.open("https://chat.openai.com/","_blank")
     
   }
@@ -35,16 +34,6 @@ const handleelonmusk = ()=>{
   return (
     <div className="about-page">
       
-      <section className="hero-section">
-        <div className="hero-overlay-about">
-          <div className="hero-content">
-            <h1>Bringing Passion to Your Kitchen</h1>
-            <p>
-              At Live Kitchen, we're on a mission to connect food lovers with expert chefs through interactive cooking experiences. We inspire creativity and build a global community of home cooks.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Our Story Section */}
       <section className="story-section">
